@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url('pic.jpg');
+    background-size: cover;
+}
+.row {
+    margin-right: 0;
+}
+.overlay {
+    background-image: linear-gradient(to right,rgba(23, 148, 237, 0.5),rgba(224, 53, 84,0.5));
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    justify-content: center;
+    text-align: center;
+    .login {
+        background-color: white ;
+        width:25%;
+        height: 80%;
+        margin:50px auto;
+        border-radius: 5%;
+        h2 {
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input {
+            border:none;
+            outline:unset;
+            border-bottom:1px solid black;
+            padding-left:25px;
+            &::placeholder {
+                text-transform: capitalize;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:black;
+            
+            }
+        }
+        i {
+            position: absolute;
+            top: 5px;
+            left: 14px;
+        }
+        .first-text {
+            text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
+            color:black; 
+            margin-left:35px;
+            text-align:left;
+            margin-top:-5px
+        }
+        .btn{
+            border:none;
+            outline:unset;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:white;
+            background-color: rgb(42, 118, 165);
+            border-radius: 20px ;
+            margin:20px auto
+        }
+        .last-text {
+            font-family: 'Times New Roman', Times, serif;
+            color:black; 
+            text-align:center;
+            margin-right:40px;
+            a {
+                color:#74BDCB;
+                text-decoration: none;
+            }
+           
+        }
+    }
+}
+@media (max-width:600px){
+    
+    .overlay{
+        .login{
+            width:95%;
+            padding:1%;
+            .col-sm-10 {
+                padding-left: 25px;
+            }
+            i {
+                position: absolute;
+                top: 5px;
+                left: 25px;
+            }
+            .first-text {
+                margin-left:15px;
+            }
+            input {
+                padding-left:30px;
+            }
+        }
+    }
+} 
+@media (max-width:768px){
+    
+    .overlay{
+        .login{
+            width: 40%;
+            height: 50%;
+            input {
+                padding-left:30px;
+            }
+        }
+    }
+} 
